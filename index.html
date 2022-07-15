@@ -57,7 +57,7 @@
       <section class="hyro overlay">
         <div class="container">
           <h1 class="hyro__text">Эффективные решения для вашего бизнеса</h1>
-          <button type="button" class="hyro__button" data-modal-open>Заказать услугу</button>
+          <button type="button" class="button" data-modal-open>Заказать услугу</button>
         </div>
       </section>
       <!-- Про роботу компанії -->
@@ -358,7 +358,7 @@
             <ul class="address__list">
               <li class="address__item">
                 <a
-                  class="footer-address"
+                  class="address__link link--maps"
                   href="https://goo.gl/maps/VeayQojqGneW1Sk49"
                   target="_blank"
                   rel="noreferrer noopener"
@@ -367,58 +367,62 @@
                 >
               </li>
               <li class="address__item">
-                <a class="footer-data" href="mailto:info@example.com">info@example.com</a>
+                <a class="address__link link--contacts" href="mailto:info@example.com"
+                  >info@example.com</a
+                >
               </li>
               <li class="address__item">
-                <a class="footer-data" href="tel:+380991111111">+38 099 111 11 11</a>
+                <a class="address__link link--contacts" href="tel:+380991111111"
+                  >+38 099 111 11 11</a
+                >
               </li>
             </ul>
           </address>
         </div>
-        <div class="footer-net">
-          <h2 class="footer-subtitle">присоединяйтесь</h2>
-          <ul class="footer-listnet">
-            <li class="footer-itemnet">
-              <a class="net-link f-link" href="">
-                <svg class="net-icons f-icons" width="20px" height="20px">
+        <div class="footer__net">
+          <h2 class="footer__subtitle">присоединяйтесь</h2>
+          <ul class="social__list">
+            <li class="social__item">
+              <a class="social__link footer__link" href="">
+                <svg class="net-icons footer__icons" width="20px" height="20px">
                   <use href="./images/symbol-defs.svg#icon-instagram-2"></use>
                 </svg>
               </a>
             </li>
-            <li class="footer-itemnet">
-              <a class="net-link f-link" href="">
-                <svg class="net-icons f-icons" width="20px" height="20px">
+            <li class="social__item">
+              <a class="social__link footer__link" href="">
+                <svg class="net-icons footer__icons" width="20px" height="20px">
                   <use href="./images/symbol-defs.svg#icon-twitter-1"></use>
                 </svg>
               </a>
             </li>
-            <li class="footer-itemnet">
-              <a class="net-link f-link" href="">
-                <svg class="net-icons f-icons" width="20px" height="20px">
+            <li class="social__item">
+              <a class="social__link footer__link" href="">
+                <svg class="net-icons footer__icons" width="20px" height="20px">
                   <use href="./images/symbol-defs.svg#icon-facebook-1"></use>
                 </svg>
               </a>
             </li>
-            <li class="footer-itemnet">
-              <a class="net-link f-link" href="">
-                <svg class="net-icons f-icons" width="20px" height="20px">
+            <li class="social__item">
+              <a class="social__link footer__link" href="">
+                <svg class="net-icons footer__icons" width="20px" height="20px">
                   <use href="./images/symbol-defs.svg#icon-linkedin-1"></use>
                 </svg>
               </a>
             </li>
           </ul>
         </div>
-        <div class="footer-letter">
-          <h2 class="footer-subtitle">Подпишитесь на рассылку</h2>
+        <div class="footer__letter">
+          <h2 class="footer__subtitle">Подпишитесь на рассылку</h2>
           <form name="signup_form" autocomplete="on" novalidate>
-            <div>
-              <label class="footer-field">
-                <input class="footer-mail" type="email" name="email" placeholder="E-mail" />
+            <div class="footer__form">
+              <label class="form__field">
+                <input class="footer__input" type="email" name="email" placeholder="E-mail" />
               </label>
 
-              <button class="btn-field" type="submit">
-                <span class="btn-field-text">Подписаться</span>
-                <svg class="telegram" width="24" height="24">
+              <button class="button button--footer" type="submit">
+                <span class="btn__footer__text">Подписаться</span>
+                <svg class="btn__telegram" width="24" height="24">
                   <use href="./images/symbol-defs.svg#icon-telegram"></use>
                 </svg>
               </button>
@@ -430,19 +434,19 @@
 
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
-        <button class="btn-modal" data-modal-close>
-          <svg class="net-icons close" width="11px" height="11px">
+        <button class="modal__btn" data-modal-close>
+          <svg width="11px" height="11px">
             <use href="./images/symbol-defs.svg#icon-cross"></use>
           </svg>
         </button>
         <h2 class="form-title">Оставьте свои данные, мы вам перезвоним</h2>
 
         <form name="signup_form" autocomplete="on">
-          <div class="modal-form">
-            <label class="modal-name"
+          <div class="form__modal">
+            <label class="form__name"
               >Имя
-              <div class="modal-item">
-                <input class="modal-input" type="name" name="name" required />
+              <div class="form__item">
+                <input class="form__input" type="name" name="name" required />
 
                 <svg class="form-icon" width="18px" height="18px">
                   <use href="./images/symbol-defs.svg#icon-person-black"></use>
@@ -451,11 +455,11 @@
             </label>
           </div>
 
-          <div class="modal-form">
-            <label class="modal-name"
+          <div class="form__modal">
+            <label class="form__name"
               >Телефон
-              <div class="modal-item">
-                <input class="modal-input" type="tel" name="tel" required />
+              <div class="form__item">
+                <input class="form__input" type="tel" name="tel" required />
                 <svg class="form-icon" width="18px" height="18px">
                   <use href="./images/symbol-defs.svg#icon-phone-black"></use>
                 </svg>
@@ -463,11 +467,11 @@
             </label>
           </div>
 
-          <div class="modal-form">
-            <label class="modal-name"
+          <div class="form__modal">
+            <label class="form__name"
               >Почта
-              <div class="modal-item">
-                <input class="modal-input" type="email" name="mail" required />
+              <div class="form__item">
+                <input class="form__input" type="email" name="mail" required />
                 <svg class="form-icon" width="18px" height="18px">
                   <use href="./images/symbol-defs.svg#icon-email-black"></use>
                 </svg>
@@ -475,32 +479,38 @@
             </label>
           </div>
 
-          <div class="modal-form">
-            <label class="modal-name" for=""
+          <div class="form__modal">
+            <label class="form__name" for=""
               >Комментарий<textarea
-                class="modal-input area"
+                class="form__input form__area"
                 name=""
                 placeholder="Введите текст"
               ></textarea>
             </label>
           </div>
 
-          <div class="modal-checkbox">
-            <label class="checkbox-label"
-              ><input class="checkbox" type="checkbox" name="hobby" value="reading" required />
-              <span class="text-checkbox-before">
+          <div class="form__checkbox">
+            <label class="checkbox__label"
+              ><input
+                class="checkbox__input"
+                type="checkbox"
+                name="hobby"
+                value="reading"
+                required
+              />
+              <span class="checkbox__before">
                 <svg width="11px" height="8px">
                   <use href="./images/symbol-defs.svg#icon-vector-form"></use>
                 </svg>
               </span>
-              <span class="text-checkbox">
+              <span class="checkbox__text">
                 Соглашаюсь с рассылкой и принимаю
-                <a class="link-checkbox" href="">Условия договора</a></span
+                <a class="checkbox__link" href="">Условия договора</a></span
               >
             </label>
           </div>
 
-          <button class="btn-form" type="submit">Отправить</button>
+          <button class="button button--form" type="submit">Отправить</button>
         </form>
       </div>
     </div>
